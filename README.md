@@ -27,7 +27,7 @@ Start using the component
 import { Step, StepItem } from "@iwatakeshi/chakra-step"
 import { Box } from "@chakra-ui/react"
 
-// See the Page story in the stories directory for a complete exmaple
+// See the Page story in the stories directory for a complete example
 export default function App() {
   return <Step>
     <StepItem step={1}>
