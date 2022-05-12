@@ -8,8 +8,8 @@ export interface StepItemProps extends Omit<FlexProps, "children"> {
   children: [ReactNode, ReactNode] | ReactNode;
   reverse?: boolean | boolean[];
   line?: ReactNode;
-  leftProps: StepContentProps;
-  rightProps: StepContentProps;
+  leftProps?: StepContentProps;
+  rightProps?: StepContentProps;
 }
 
 export function StepItem({ reverse, line, step = 1, ...props }: StepItemProps) {
