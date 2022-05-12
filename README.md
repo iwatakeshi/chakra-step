@@ -54,7 +54,7 @@ The left and right side both have `50vw` applied to their widths. This keeps the
   leftProps={{
     w: "30vw" // or any responsive value here
   }}
-  rigthProps={{
+  rightProps={{
    w: "30vw"
  }} 
 >
