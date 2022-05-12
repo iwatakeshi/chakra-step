@@ -46,7 +46,7 @@ export default function App() {
 
 ### How It Works
 
-The left and right side both have `50vw` applied to their widths. Which keeps the line centered between the two sides. If a `Container` component is used to wrap the `Step` component, you will need to change the widths by doing the following:
+The left and right side both have `50vw` applied to their widths. This keeps the line centered between the two sides. If a `Container` component is used to wrap the `Step` component, you will need to change the widths by doing the following:
 
 ```tsx
 <StepItem 
