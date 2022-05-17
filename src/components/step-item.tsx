@@ -12,7 +12,7 @@ export interface StepItemProps extends Omit<FlexProps, "children"> {
   rightProps?: StepContentProps;
 }
 
-export function StepItem({ reverse, line, step = 1, ...props }: StepItemProps) {
+export function StepItem({ reverse, line, step = 1, leftProps, rightProps, ...props }: StepItemProps) {
   const isReversed = useBreakpointValue(
     Array.isArray(reverse) ? reverse : { base: reverse }
   );
@@ -33,14 +33,14 @@ export function StepItem({ reverse, line, step = 1, ...props }: StepItemProps) {
     <Flex {...props} direction="row">
       <StepContent
         w={[null, null, null, "50vw"]}
-        {...props.leftProps}
+        {...leftProps}
         display={["none", null, null, "flex"]}
       >
         {left}
       </StepContent>
       {line ?? <StepLine step={step} />}
       <Flex direction="column">
-        <StepContent w={[null, null, null, "50vw"]} {...props.rightProps}>
+        <StepContent w={[null, null, null, "50vw"]} {...rightProps}>
           {right}
         </StepContent>
         <StepContent display={["flex", null, null, "none"]}>{left}</StepContent>
