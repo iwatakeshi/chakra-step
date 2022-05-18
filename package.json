@@ -12,7 +12,8 @@
     "watch": "parcel watch",
     "build": "parcel build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "@babel/core": "^7.17.12",
